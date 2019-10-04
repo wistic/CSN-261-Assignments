@@ -1,0 +1,7 @@
+graph MST {
+B--C[label="2",weight="2"];
+C--F[label="2",weight="2"];
+C--D[label="3",weight="3"];
+D--E[label="3",weight="3"];
+A--B[label="4",weight="4"];
+}
