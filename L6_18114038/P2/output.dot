@@ -1,0 +1,22 @@
+graph parent{
+subgraph order0{
+	90;
+}
+subgraph order1{
+	60 -- 65;
+}
+subgraph order2{
+	40 -- 45;
+	40 -- 75;
+	75 -- 80;
+}
+subgraph order3{
+	10 -- 15;
+	10 -- 20;
+	20 -- 25;
+	10 -- 30;
+	30 -- 35;
+	30 -- 50;
+	50 -- 55;
+}
+}

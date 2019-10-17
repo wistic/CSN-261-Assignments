@@ -1,0 +1,243 @@
+\hypertarget{main_8cpp}{}\section{main.\+cpp File Reference}
+\label{main_8cpp}\index{main.\+cpp@{main.\+cpp}}
+
+
+main file for problem 1  
+
+
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+Include dependency graph for main.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{main_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classVector}{Vector$<$ T $>$}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classVector}{Vector} class implementation without stl. \end{DoxyCompactList}\item 
+class \hyperlink{classNode}{Node}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classNode}{Node} class for tree. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classNode}{Node} $\ast$ \hyperlink{main_8cpp_ac05c8fb9a48b8eb20d02ce530b5a77d9}{find\+Node} (string name, \hyperlink{classVector}{Vector}$<$ \hyperlink{classNode}{Node} $>$ \&nodes)
+\begin{DoxyCompactList}\small\item\em find node of particular name \end{DoxyCompactList}\item 
+void \hyperlink{main_8cpp_a69ceafccb3554e83530d395ee208caa9}{reset\+Nodes} (\hyperlink{classVector}{Vector}$<$ \hyperlink{classNode}{Node} $>$ \&nodes)
+\begin{DoxyCompactList}\small\item\em reset all the nodes \end{DoxyCompactList}\item 
+bool \hyperlink{main_8cpp_af114394f365b44f910989aa1b5e1d157}{recursive\+Loop\+Find} (\hyperlink{classNode}{Node} $\ast$root, \hyperlink{classNode}{Node} $\ast$parent)
+\begin{DoxyCompactList}\small\item\em Finds the loop in graph. \end{DoxyCompactList}\item 
+void \hyperlink{main_8cpp_a5e64ea85e86400bd9e4f0f4d37e372a8}{print\+B\+FS} (\hyperlink{classNode}{Node} $\ast$root)
+\begin{DoxyCompactList}\small\item\em Print the B\+FS of graph. \end{DoxyCompactList}\item 
+void \hyperlink{main_8cpp_a74cea7ac3c0e9a2a66cdcb9ad90655ce}{travel} (\hyperlink{classNode}{Node} $\ast$root, int distance)
+\begin{DoxyCompactList}\small\item\em Travel through the graph. \end{DoxyCompactList}\item 
+int \hyperlink{main_8cpp_a809575e6915d3f1c1c96a4377685b1ae}{find\+Max\+Distance} (\hyperlink{classVector}{Vector}$<$ \hyperlink{classNode}{Node} $>$ \&nodes)
+\begin{DoxyCompactList}\small\item\em find maximum distance in the graph \end{DoxyCompactList}\item 
+void \hyperlink{main_8cpp_a7bc0e94fb0ee59c1f5c8d024b38eccdb}{print\+Diameter} (\hyperlink{classVector}{Vector}$<$ \hyperlink{classNode}{Node} $>$ \&nodes)
+\begin{DoxyCompactList}\small\item\em prints the diameter of graph \end{DoxyCompactList}\item 
+void \hyperlink{main_8cpp_a0fd050dcb16500263f4adae9bf873bf5}{print\+D\+FS} (\hyperlink{classNode}{Node} $\ast$root)
+\begin{DoxyCompactList}\small\item\em Prints the D\+FS of graph. \end{DoxyCompactList}\item 
+void \hyperlink{main_8cpp_a5aa65c31d6c710646427a8750365bbaa}{parse\+File} (ifstream \&file, \hyperlink{classVector}{Vector}$<$ \hyperlink{classNode}{Node} $>$ \&nodes)
+\begin{DoxyCompactList}\small\item\em Parse the input file. \end{DoxyCompactList}\item 
+int \hyperlink{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em main function \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+main file for problem 1 
+
+\begin{DoxyAuthor}{Author}
+Utkarsh 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2019-\/10-\/09
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2019 
+\end{DoxyCopyright}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_a809575e6915d3f1c1c96a4377685b1ae}\label{main_8cpp_a809575e6915d3f1c1c96a4377685b1ae}} 
+\index{main.\+cpp@{main.\+cpp}!find\+Max\+Distance@{find\+Max\+Distance}}
+\index{find\+Max\+Distance@{find\+Max\+Distance}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{find\+Max\+Distance()}{findMaxDistance()}}
+{\footnotesize\ttfamily int find\+Max\+Distance (\begin{DoxyParamCaption}\item[{\hyperlink{classVector}{Vector}$<$ \hyperlink{classNode}{Node} $>$ \&}]{nodes }\end{DoxyParamCaption})}
+
+
+
+find maximum distance in the graph 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nodes} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_ac05c8fb9a48b8eb20d02ce530b5a77d9}\label{main_8cpp_ac05c8fb9a48b8eb20d02ce530b5a77d9}} 
+\index{main.\+cpp@{main.\+cpp}!find\+Node@{find\+Node}}
+\index{find\+Node@{find\+Node}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{find\+Node()}{findNode()}}
+{\footnotesize\ttfamily \hyperlink{classNode}{Node}$\ast$ find\+Node (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{\hyperlink{classVector}{Vector}$<$ \hyperlink{classNode}{Node} $>$ \&}]{nodes }\end{DoxyParamCaption})}
+
+
+
+find node of particular name 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+{\em nodes} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Node$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\label{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{main.\+cpp@{main.\+cpp}!main@{main}}
+\index{main@{main}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+main function 
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & \\
+\hline
+{\em argv} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_a5aa65c31d6c710646427a8750365bbaa}\label{main_8cpp_a5aa65c31d6c710646427a8750365bbaa}} 
+\index{main.\+cpp@{main.\+cpp}!parse\+File@{parse\+File}}
+\index{parse\+File@{parse\+File}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{parse\+File()}{parseFile()}}
+{\footnotesize\ttfamily void parse\+File (\begin{DoxyParamCaption}\item[{ifstream \&}]{file,  }\item[{\hyperlink{classVector}{Vector}$<$ \hyperlink{classNode}{Node} $>$ \&}]{nodes }\end{DoxyParamCaption})}
+
+
+
+Parse the input file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & \\
+\hline
+{\em nodes} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_a5e64ea85e86400bd9e4f0f4d37e372a8}\label{main_8cpp_a5e64ea85e86400bd9e4f0f4d37e372a8}} 
+\index{main.\+cpp@{main.\+cpp}!print\+B\+FS@{print\+B\+FS}}
+\index{print\+B\+FS@{print\+B\+FS}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{print\+B\+F\+S()}{printBFS()}}
+{\footnotesize\ttfamily void print\+B\+FS (\begin{DoxyParamCaption}\item[{\hyperlink{classNode}{Node} $\ast$}]{root }\end{DoxyParamCaption})}
+
+
+
+Print the B\+FS of graph. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em root} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_a0fd050dcb16500263f4adae9bf873bf5}\label{main_8cpp_a0fd050dcb16500263f4adae9bf873bf5}} 
+\index{main.\+cpp@{main.\+cpp}!print\+D\+FS@{print\+D\+FS}}
+\index{print\+D\+FS@{print\+D\+FS}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{print\+D\+F\+S()}{printDFS()}}
+{\footnotesize\ttfamily void print\+D\+FS (\begin{DoxyParamCaption}\item[{\hyperlink{classNode}{Node} $\ast$}]{root }\end{DoxyParamCaption})}
+
+
+
+Prints the D\+FS of graph. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em root} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_a7bc0e94fb0ee59c1f5c8d024b38eccdb}\label{main_8cpp_a7bc0e94fb0ee59c1f5c8d024b38eccdb}} 
+\index{main.\+cpp@{main.\+cpp}!print\+Diameter@{print\+Diameter}}
+\index{print\+Diameter@{print\+Diameter}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{print\+Diameter()}{printDiameter()}}
+{\footnotesize\ttfamily void print\+Diameter (\begin{DoxyParamCaption}\item[{\hyperlink{classVector}{Vector}$<$ \hyperlink{classNode}{Node} $>$ \&}]{nodes }\end{DoxyParamCaption})}
+
+
+
+prints the diameter of graph 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nodes} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_af114394f365b44f910989aa1b5e1d157}\label{main_8cpp_af114394f365b44f910989aa1b5e1d157}} 
+\index{main.\+cpp@{main.\+cpp}!recursive\+Loop\+Find@{recursive\+Loop\+Find}}
+\index{recursive\+Loop\+Find@{recursive\+Loop\+Find}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{recursive\+Loop\+Find()}{recursiveLoopFind()}}
+{\footnotesize\ttfamily bool recursive\+Loop\+Find (\begin{DoxyParamCaption}\item[{\hyperlink{classNode}{Node} $\ast$}]{root,  }\item[{\hyperlink{classNode}{Node} $\ast$}]{parent }\end{DoxyParamCaption})}
+
+
+
+Finds the loop in graph. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em root} & \\
+\hline
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_a69ceafccb3554e83530d395ee208caa9}\label{main_8cpp_a69ceafccb3554e83530d395ee208caa9}} 
+\index{main.\+cpp@{main.\+cpp}!reset\+Nodes@{reset\+Nodes}}
+\index{reset\+Nodes@{reset\+Nodes}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{reset\+Nodes()}{resetNodes()}}
+{\footnotesize\ttfamily void reset\+Nodes (\begin{DoxyParamCaption}\item[{\hyperlink{classVector}{Vector}$<$ \hyperlink{classNode}{Node} $>$ \&}]{nodes }\end{DoxyParamCaption})}
+
+
+
+reset all the nodes 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nodes} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_a74cea7ac3c0e9a2a66cdcb9ad90655ce}\label{main_8cpp_a74cea7ac3c0e9a2a66cdcb9ad90655ce}} 
+\index{main.\+cpp@{main.\+cpp}!travel@{travel}}
+\index{travel@{travel}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{travel()}{travel()}}
+{\footnotesize\ttfamily void travel (\begin{DoxyParamCaption}\item[{\hyperlink{classNode}{Node} $\ast$}]{root,  }\item[{int}]{distance }\end{DoxyParamCaption})}
+
+
+
+Travel through the graph. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em root} & \\
+\hline
+{\em distance} & \\
+\hline
+\end{DoxyParams}
